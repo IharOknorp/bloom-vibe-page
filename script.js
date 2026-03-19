@@ -341,11 +341,13 @@ const translations = {
 
 const storageKey = "bloomvibe-language";
 const consentStorageKey = "bloomvibe-consent-v1";
+const isStaticLanguagePage = document.body.dataset.i18nMode === "static";
 const yearNode = document.querySelector("#year");
 const textNodes = document.querySelectorAll("[data-i18n]");
 const altNodes = document.querySelectorAll("[data-i18n-alt]");
 const ariaNodes = document.querySelectorAll("[data-i18n-aria-label]");
 const langButtons = document.querySelectorAll(".lang-button");
+const localizedHrefNodes = document.querySelectorAll("[data-localized-href]");
 const metaTitleNode = document.querySelector("#meta-title");
 const metaDescriptionNode = document.querySelector("#meta-description");
 const metaOgTitleNode = document.querySelector("#meta-og-title");
@@ -359,6 +361,23 @@ const consentAcceptButtons = document.querySelectorAll("[data-consent-accept]");
 const consentRejectButtons = document.querySelectorAll("[data-consent-reject]");
 const consentSaveButtons = document.querySelectorAll("[data-consent-save]");
 const marketCtaLinks = document.querySelectorAll("[data-market-cta]");
+const localizedRoutes = {
+  home: {
+    en: "index.html",
+    ru: "ru/",
+    uk: "uk/",
+  },
+  privacy: {
+    en: "privacy.html?lang=en",
+    ru: "privacy.html?lang=ru",
+    uk: "privacy.html?lang=uk",
+  },
+  cookies: {
+    en: "cookies.html?lang=en",
+    ru: "cookies.html?lang=ru",
+    uk: "cookies.html?lang=uk",
+  },
+};
 
 if (yearNode) {
   yearNode.textContent = new Date().getFullYear();
@@ -367,6 +386,12 @@ if (yearNode) {
 const translate = (language, key) => translations[language]?.[key] ?? translations.en[key];
 
 const getInitialLanguage = () => {
+  const languageFromQuery = new URLSearchParams(window.location.search).get("lang");
+
+  if (languageFromQuery && translations[languageFromQuery]) {
+    return languageFromQuery;
+  }
+
   try {
     const savedLanguage = window.localStorage.getItem(storageKey);
 
@@ -455,6 +480,14 @@ const setLanguage = (language, options = {}) => {
     button.setAttribute("aria-pressed", String(isActive));
   });
 
+  localizedHrefNodes.forEach((node) => {
+    const localizedHref = localizedRoutes[node.dataset.localizedHref]?.[language];
+
+    if (localizedHref) {
+      node.setAttribute("href", localizedHref);
+    }
+  });
+
   if (persist) {
     try {
       window.localStorage.setItem(storageKey, language);
@@ -462,13 +495,15 @@ const setLanguage = (language, options = {}) => {
   }
 };
 
-langButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    setLanguage(button.dataset.lang, { persist: true });
+if (!isStaticLanguagePage) {
+  langButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      setLanguage(button.dataset.lang, { persist: true });
+    });
   });
-});
 
-setLanguage(getInitialLanguage(), { persist: false });
+  setLanguage(getInitialLanguage(), { persist: false });
+}
 
 const getStoredConsent = () => {
   try {

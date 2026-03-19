@@ -48,6 +48,10 @@
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <meta name="theme-color" content="#f4efe4" />
     <link rel="canonical" href="https://iharoknorp.github.io/bloom-vibe-page/" />
+    <link rel="alternate" hreflang="en" href="https://iharoknorp.github.io/bloom-vibe-page/" />
+    <link rel="alternate" hreflang="ru" href="https://iharoknorp.github.io/bloom-vibe-page/ru/" />
+    <link rel="alternate" hreflang="uk" href="https://iharoknorp.github.io/bloom-vibe-page/uk/" />
+    <link rel="alternate" hreflang="x-default" href="https://iharoknorp.github.io/bloom-vibe-page/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -126,7 +130,7 @@
     </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body data-page="home">
+  <body data-page="home" data-i18n-mode="static">
     <div class="page-shell">
       <header class="site-header">
         <a class="brand" href="#top" data-i18n-aria-label="brand.homeAria" aria-label="BloomVibe home">
@@ -151,9 +155,9 @@
             aria-label="Language switcher"
             data-i18n-aria-label="lang.aria"
           >
-            <button class="lang-button is-active" type="button" data-lang="en" aria-pressed="true">EN</button>
-            <button class="lang-button" type="button" data-lang="ru" aria-pressed="false">RU</button>
-            <button class="lang-button" type="button" data-lang="uk" aria-pressed="false">UKR</button>
+            <a class="lang-link is-active" href="./" aria-current="page">EN</a>
+            <a class="lang-link" href="ru/">RU</a>
+            <a class="lang-link" href="uk/">UKR</a>
           </div>
 
           <a
@@ -417,8 +421,8 @@
       <footer class="site-footer">
         <p data-i18n="footer.tagline">BloomVibe landing page for GitHub Pages.</p>
         <div class="footer-links">
-          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
-          <a href="cookies.html" data-i18n="footer.cookies">Cookie Policy</a>
+          <a href="privacy.html?lang=en" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="cookies.html?lang=en" data-i18n="footer.cookies">Cookie Policy</a>
           <button class="footer-settings-button" type="button" data-consent-open data-i18n="footer.settings">
             Privacy settings
           </button>
@@ -436,8 +440,8 @@
             We use Google Analytics only if you agree. Essential storage remembers your language and privacy choices.
           </p>
           <div class="consent-links">
-            <a href="privacy.html" data-i18n="consent.privacyLink">Privacy Policy</a>
-            <a href="cookies.html" data-i18n="consent.cookiesLink">Cookie Policy</a>
+            <a href="privacy.html?lang=en" data-i18n="consent.privacyLink">Privacy Policy</a>
+            <a href="cookies.html?lang=en" data-i18n="consent.cookiesLink">Cookie Policy</a>
           </div>
         </div>
 

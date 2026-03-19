@@ -157,7 +157,11 @@ a {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55);
 }
 
-.lang-button {
+.lang-button,
+.lang-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   appearance: none;
   border: 0;
   padding: 9px 12px;
@@ -176,12 +180,15 @@ a {
 }
 
 .lang-button:hover,
-.lang-button:focus-visible {
+.lang-button:focus-visible,
+.lang-link:hover,
+.lang-link:focus-visible {
   color: var(--text);
   transform: translateY(-1px);
 }
 
-.lang-button.is-active {
+.lang-button.is-active,
+.lang-link.is-active {
   background: rgba(203, 111, 67, 0.14);
   color: var(--accent-dark);
 }
