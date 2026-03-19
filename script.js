@@ -32,14 +32,14 @@ const translations = {
     "preview.card1.title": "See your current vibe and active sessions",
     "preview.card1.text":
       "The main screen gives a structured overview of the day, available rituals, and your current time window.",
-    "preview.card2.kicker": "Guided generation",
-    "preview.card2.title": "Wait while the app prepares ideas for your mood",
+    "preview.card2.kicker": "Session setup",
+    "preview.card2.title": "Choose your time and place before you start",
     "preview.card2.text":
-      "BloomVibe curates matching activities and micro-adventures so you can move from intention to action quickly.",
-    "preview.card3.kicker": "More app moments",
-    "preview.card3.title": "Placeholder for the next screen preview",
+      "Pick how long you have and whether you want to do the ritual at home or outside, then launch the task in one tap.",
+    "preview.card3.kicker": "Task details",
+    "preview.card3.title": "Follow clear micro-steps and finish the activity",
     "preview.card3.text":
-      "This card temporarily reuses the first screen. Replace it later with the new screenshot when it is ready.",
+      "Each task shows the expected outcome, short instructions, and a simple flow you can complete without friction.",
     "benefits.eyebrow": "Built for everyday momentum",
     "benefits.title": "One app, multiple ways to reset your day.",
     "benefits.card1.title": "Clarity on demand",
@@ -106,8 +106,10 @@ const translations = {
     "consent.save": "Save choices",
     "images.hero": "BloomVibe daily ritual screen with today's vibe and session cards",
     "images.previewOne": "BloomVibe home screen showing today's vibe, ritual card, and navigation tabs",
-    "images.previewTwo": "BloomVibe curation screen preparing personalized micro-adventures",
-    "images.previewThree": "BloomVibe preview placeholder using the daily ritual home screen",
+    "images.previewTwo":
+      "BloomVibe setup screen for choosing available time and where to do the activity",
+    "images.previewThree":
+      "BloomVibe task details screen with micro-steps, expected outcome, and completion action",
   },
   ru: {
     "meta.title": "BloomVibe | Ритуалы для ясности, спокойствия и творческой энергии",
@@ -142,14 +144,14 @@ const translations = {
     "preview.card1.title": "Смотрите текущее состояние и активные сессии",
     "preview.card1.text":
       "Главный экран показывает структуру дня, доступные ритуалы и текущее временное окно.",
-    "preview.card2.kicker": "Подбор идей",
-    "preview.card2.title": "Подождите, пока приложение подберет идеи под ваше настроение",
+    "preview.card2.kicker": "Настройка сессии",
+    "preview.card2.title": "Выберите время и место перед стартом",
     "preview.card2.text":
-      "BloomVibe подбирает подходящие активности и микро-приключения, чтобы вы быстрее переходили от намерения к действию.",
-    "preview.card3.kicker": "Больше моментов",
-    "preview.card3.title": "Заглушка для следующего экрана",
+      "Укажите, сколько у вас времени и где вы хотите пройти ритуал: дома или на улице, а затем запустите задачу одним нажатием.",
+    "preview.card3.kicker": "Детали задания",
+    "preview.card3.title": "Следуйте по понятным шагам и завершайте активность",
     "preview.card3.text":
-      "Пока эта карточка временно использует первый экран. Позже ее можно заменить новым скриншотом.",
+      "Каждое задание показывает ожидаемый результат, короткие инструкции и простой сценарий, который легко пройти до конца.",
     "benefits.eyebrow": "Для ежедневного ритма",
     "benefits.title": "Одно приложение, чтобы по-разному перезагружать день.",
     "benefits.card1.title": "Ясность по запросу",
@@ -217,8 +219,10 @@ const translations = {
     "consent.save": "Сохранить выбор",
     "images.hero": "Экран ежедневного ритуала BloomVibe с текущим состоянием и карточками сессий",
     "images.previewOne": "Главный экран BloomVibe с настроением дня, карточкой ритуала и навигацией",
-    "images.previewTwo": "Экран BloomVibe с подбором персональных микро-приключений",
-    "images.previewThree": "Временное превью BloomVibe с повтором главного экрана",
+    "images.previewTwo":
+      "Экран BloomVibe с выбором времени и места для выполнения активности",
+    "images.previewThree":
+      "Экран задания BloomVibe с микро-шагами, ожидаемым результатом и кнопкой завершения",
   },
   uk: {
     "meta.title": "BloomVibe | Ритуали для ясності, спокою та творчої енергії",
@@ -253,14 +257,14 @@ const translations = {
     "preview.card1.title": "Дивіться поточний стан і активні сесії",
     "preview.card1.text":
       "Головний екран показує структуру дня, доступні ритуали та поточне часовe вікно.",
-    "preview.card2.kicker": "Підбір ідей",
-    "preview.card2.title": "Зачекайте, поки застосунок підбере ідеї під ваш настрій",
+    "preview.card2.kicker": "Налаштування сесії",
+    "preview.card2.title": "Оберіть час і місце перед стартом",
     "preview.card2.text":
-      "BloomVibe підбирає відповідні активності та мікропригоди, щоб ви швидше переходили від наміру до дії.",
-    "preview.card3.kicker": "Більше моментів",
-    "preview.card3.title": "Заглушка для наступного екрану",
+      "Вкажіть, скільки у вас часу і де ви хочете пройти ритуал: удома чи надворі, а потім запустіть завдання одним натисканням.",
+    "preview.card3.kicker": "Деталі завдання",
+    "preview.card3.title": "Слідуйте зрозумілим крокам і завершуйте активність",
     "preview.card3.text":
-      "Поки що ця картка тимчасово використовує перший екран. Пізніше її можна замінити новим скриншотом.",
+      "Кожне завдання показує очікуваний результат, короткі інструкції та простий сценарій, який легко пройти до кінця.",
     "benefits.eyebrow": "Для щоденного ритму",
     "benefits.title": "Один застосунок, щоб по-різному перезавантажувати свій день.",
     "benefits.card1.title": "Ясність на запит",
@@ -328,8 +332,10 @@ const translations = {
     "consent.save": "Зберегти вибір",
     "images.hero": "Екран щоденного ритуалу BloomVibe з поточним станом і картками сесій",
     "images.previewOne": "Головний екран BloomVibe з настроєм дня, карткою ритуалу та навігацією",
-    "images.previewTwo": "Екран BloomVibe з підбором персональних мікропригод",
-    "images.previewThree": "Тимчасове прев'ю BloomVibe з повтором головного екрана",
+    "images.previewTwo":
+      "Екран BloomVibe з вибором часу та місця для виконання активності",
+    "images.previewThree":
+      "Екран завдання BloomVibe з мікрокроками, очікуваним результатом і кнопкою завершення",
   },
 };
 
