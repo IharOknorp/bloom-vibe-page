@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BloomVibe | Cookie Policy</title>
+    <meta
+      name="description"
+      content="Cookie Policy for the BloomVibe website, including essential storage, analytics cookies, and consent controls."
+    />
+    <meta name="theme-color" content="#f4efe4" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="logo.png" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1R0DRW74FC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      (function () {
+        const consentStorageKey = "bloomvibe-consent-v1";
+        let analyticsConsent = "denied";
+
+        try {
+          const savedConsent = JSON.parse(window.localStorage.getItem(consentStorageKey) || "null");
+
+          if (savedConsent?.analytics === "granted") {
+            analyticsConsent = "granted";
+          }
+        } catch (error) {}
+
+        gtag("consent", "default", {
+          ad_storage: "denied",
+          ad_user_data: "denied",
+          ad_personalization: "denied",
+          analytics_storage: "denied",
+          wait_for_update: 500,
+        });
+
+        if (analyticsConsent === "granted") {
+          gtag("consent", "update", {
+            analytics_storage: "granted",
+          });
+        }
+
+        gtag("js", new Date());
+        gtag("config", "G-1R0DRW74FC", {
+          anonymize_ip: true,
+        });
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="cookies">
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="index.html" data-i18n-aria-label="brand.homeAria" aria-label="BloomVibe home">
+          <span class="brand-mark">
+            <img src="logo.png" alt="BloomVibe logo" data-i18n-alt="brand.logoAlt" />
+          </span>
+          <span class="brand-text">BloomVibe</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Policy navigation" data-i18n-aria-label="policyNav.aria">
+          <a href="index.html" data-i18n="policyNav.home">Home</a>
+          <a href="privacy.html" data-i18n="policyNav.privacy">Privacy</a>
+          <a href="cookies.html" data-i18n="policyNav.cookies">Cookies</a>
+        </nav>
+
+        <div class="header-actions">
+          <div
+            class="lang-switcher"
+            role="group"
+            aria-label="Language switcher"
+            data-i18n-aria-label="lang.aria"
+          >
+            <button class="lang-button is-active" type="button" data-lang="en" aria-pressed="true">EN</button>
+            <button class="lang-button" type="button" data-lang="ru" aria-pressed="false">RU</button>
+            <button class="lang-button" type="button" data-lang="uk" aria-pressed="false">UKR</button>
+          </div>
+
+          <a
+            class="button button-small"
+            href="https://play.google.com/store/apps/details?id=com.oknorp.online.vibevoyageai"
+            target="_blank"
+            rel="noreferrer"
+            data-market-cta="cookies-header"
+            data-i18n="header.cta"
+          >
+            Get the app
+          </a>
+        </div>
+      </header>
+
+      <main class="policy-main">
+        <section class="policy-card">
+          <p class="eyebrow" data-i18n="cookiesPage.eyebrow">Cookie Policy</p>
+          <h1 class="policy-title" data-i18n="cookiesPage.title">Cookie Policy</h1>
+          <p class="policy-updated" data-i18n="cookiesPage.updated">Last updated: March 19, 2026</p>
+          <p class="policy-intro" data-i18n="cookiesPage.intro">
+            This page explains what storage technologies are used on the BloomVibe website and how you can control them.
+          </p>
+
+          <div class="policy-sections">
+            <section class="policy-section">
+              <h2 data-i18n="cookiesPage.section1.title">Essential storage</h2>
+              <p data-i18n="cookiesPage.section1.text">
+                Essential storage is used to keep the site working correctly and remember choices you make.
+              </p>
+              <ul class="policy-list">
+                <li data-i18n="cookiesPage.section1.item1">Consent preferences for analytics storage.</li>
+                <li data-i18n="cookiesPage.section1.item2">Language preference when you actively switch languages.</li>
+              </ul>
+            </section>
+
+            <section class="policy-section">
+              <h2 data-i18n="cookiesPage.section2.title">Analytics storage</h2>
+              <p data-i18n="cookiesPage.section2.text">
+                If you accept analytics, Google Analytics may use cookies or similar storage to measure visits, page views, and site interactions.
+              </p>
+              <p data-i18n="cookiesPage.section2.text2">
+                Analytics is off by default and is activated only after your consent.
+              </p>
+            </section>
+
+            <section class="policy-section">
+              <h2 data-i18n="cookiesPage.section3.title">How to manage your choice</h2>
+              <p data-i18n="cookiesPage.section3.text">
+                You can accept or reject analytics from the banner on first visit and reopen privacy settings later from the footer.
+              </p>
+            </section>
+
+            <section class="policy-section">
+              <h2 data-i18n="cookiesPage.section4.title">Third-party services</h2>
+              <p data-i18n="cookiesPage.section4.text">
+                When analytics is enabled, data may be processed by Google Analytics as a third-party measurement service.
+              </p>
+            </section>
+
+            <section class="policy-section">
+              <h2 data-i18n="cookiesPage.section5.title">Storage duration</h2>
+              <p data-i18n="cookiesPage.section5.text">
+                The duration of analytics-related storage is governed by Google Analytics settings, while your consent and language preferences remain until you clear them or change your choice.
+              </p>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p data-i18n="footer.tagline">BloomVibe landing page for GitHub Pages.</p>
+        <div class="footer-links">
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="cookies.html" data-i18n="footer.cookies">Cookie Policy</a>
+          <button class="footer-settings-button" type="button" data-consent-open data-i18n="footer.settings">
+            Privacy settings
+          </button>
+        </div>
+        <p>&copy; <span id="year"></span> BloomVibe</p>
+      </footer>
+    </div>
+
+    <section class="consent-banner" data-consent-banner hidden>
+      <div class="consent-shell">
+        <div class="consent-copy">
+          <p class="eyebrow consent-eyebrow" data-i18n="consent.eyebrow">Privacy choices</p>
+          <h2 class="consent-title" data-i18n="consent.title">Allow optional analytics?</h2>
+          <p class="consent-text" data-i18n="consent.text">
+            We use Google Analytics only if you agree. Essential storage remembers your language and privacy choices.
+          </p>
+          <div class="consent-links">
+            <a href="privacy.html" data-i18n="consent.privacyLink">Privacy Policy</a>
+            <a href="cookies.html" data-i18n="consent.cookiesLink">Cookie Policy</a>
+          </div>
+        </div>
+
+        <div class="consent-actions">
+          <button class="button button-secondary" type="button" data-consent-reject data-i18n="consent.reject">
+            Reject
+          </button>
+          <button class="button button-secondary" type="button" data-consent-settings data-i18n="consent.settings">
+            Settings
+          </button>
+          <button class="button" type="button" data-consent-accept data-i18n="consent.accept">
+            Accept analytics
+          </button>
+        </div>
+
+        <div class="consent-panel" data-consent-panel hidden>
+          <article class="consent-option">
+            <div>
+              <h3 data-i18n="consent.essentialTitle">Essential storage</h3>
+              <p data-i18n="consent.essentialText">
+                Required to remember language, privacy choices, and core site behavior.
+              </p>
+            </div>
+            <label class="consent-toggle">
+              <input type="checkbox" checked disabled />
+              <span class="consent-toggle-ui"></span>
+            </label>
+          </article>
+
+          <article class="consent-option">
+            <div>
+              <h3 data-i18n="consent.analyticsTitle">Analytics storage</h3>
+              <p data-i18n="consent.analyticsText">
+                Helps us understand visits and improve the site with Google Analytics.
+              </p>
+            </div>
+            <label class="consent-toggle">
+              <input type="checkbox" data-consent-analytics />
+              <span class="consent-toggle-ui"></span>
+            </label>
+          </article>
+
+          <div class="consent-panel-actions">
+            <button class="button" type="button" data-consent-save data-i18n="consent.save">Save choices</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

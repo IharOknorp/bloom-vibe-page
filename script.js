@@ -81,6 +81,29 @@ const translations = {
       "Download the Android app and start with a ritual tailored to your mood, your time, and your environment.",
     "cta.button": "View on Google Play",
     "footer.tagline": "BloomVibe landing page for GitHub Pages.",
+    "footer.privacy": "Privacy Policy",
+    "footer.cookies": "Cookie Policy",
+    "footer.settings": "Privacy settings",
+    "policyNav.aria": "Policy navigation",
+    "policyNav.home": "Home",
+    "policyNav.privacy": "Privacy",
+    "policyNav.cookies": "Cookies",
+    "consent.eyebrow": "Privacy choices",
+    "consent.title": "Allow optional analytics?",
+    "consent.text":
+      "We use Google Analytics only if you agree. Essential storage remembers your language and privacy choices.",
+    "consent.privacyLink": "Privacy Policy",
+    "consent.cookiesLink": "Cookie Policy",
+    "consent.reject": "Reject",
+    "consent.settings": "Settings",
+    "consent.accept": "Accept analytics",
+    "consent.essentialTitle": "Essential storage",
+    "consent.essentialText":
+      "Required to remember language, privacy choices, and core site behavior.",
+    "consent.analyticsTitle": "Analytics storage",
+    "consent.analyticsText":
+      "Helps us understand visits and improve the site with Google Analytics.",
+    "consent.save": "Save choices",
     "images.hero": "BloomVibe daily ritual screen with today's vibe and session cards",
     "images.previewOne": "BloomVibe home screen showing today's vibe, ritual card, and navigation tabs",
     "images.previewTwo": "BloomVibe curation screen preparing personalized micro-adventures",
@@ -96,17 +119,17 @@ const translations = {
     "brand.homeAria": "Главная BloomVibe",
     "brand.logoAlt": "Логотип BloomVibe",
     "nav.aria": "Основная навигация",
-    "nav.preview": "Превью",
+    "nav.preview": "Экраны",
     "nav.benefits": "Преимущества",
-    "nav.how": "Как это работает",
+    "nav.how": "Как работает",
     "nav.forYou": "Для кого",
     "nav.download": "Скачать",
     "lang.aria": "Переключатель языка",
-    "header.cta": "Открыть приложение",
-    "hero.eyebrow": "Персональные ритуалы под ваше состояние",
-    "hero.title": "Меняйте настроение, фокус и энергию с помощью персональных ритуалов.",
+    "header.cta": "Скачать",
+    "hero.eyebrow": "Ритуалы под ваше состояние",
+    "hero.title": "Меняйте настроение, фокус и энергию через личные ритуалы.",
     "hero.text":
-      "BloomVibe создает короткие сессии под то, как вы хотите чувствовать себя прямо сейчас: спокойнее, яснее, энергичнее или креативнее.",
+      "BloomVibe собирает короткие сессии под то, как вы хотите чувствовать себя сейчас: спокойнее, яснее или энергичнее.",
     "hero.primaryCta": "Скачать в Google Play",
     "hero.secondaryCta": "Смотреть экраны приложения",
     "hero.pointsAria": "Преимущества приложения",
@@ -114,7 +137,7 @@ const translations = {
     "hero.point2": "Идеи ритуалов дома и на улице",
     "hero.point3": "Поддержка спокойствия, фокуса, энергии и креативности",
     "preview.eyebrow": "Превью приложения",
-    "preview.title": "Реальные экраны Android-приложения.",
+    "preview.title": "Реальные экраны приложения.",
     "preview.card1.kicker": "Ежедневный ритуал",
     "preview.card1.title": "Смотрите текущее состояние и активные сессии",
     "preview.card1.text":
@@ -150,7 +173,7 @@ const translations = {
     "how.step3.text":
       "Следуйте персональной комбинации плейлистов, микро-задач и подсказок, которую вы получите за секунды.",
     "forYou.eyebrow": "Для кого",
-    "forYou.title": "Для тех, кому нужна перезагрузка без длинных рутин.",
+    "forYou.title": "Для тех, кому нужен быстрый ресет без длинных рутин.",
     "forYou.card1.title": "Студенты",
     "forYou.card1.text":
       "Находите учебный фокус, творческие паузы или быстрый ментальный ресет перед следующей задачей.",
@@ -164,11 +187,34 @@ const translations = {
     "forYou.card4.text":
       "Проходите через творческий застой с помощью подсказок, движения и ритуалов, возвращающих поток.",
     "cta.eyebrow": "Готовы попробовать?",
-    "cta.title": "Откройте BloomVibe и соберите лучшее состояние за несколько минут.",
+    "cta.title": "Откройте BloomVibe и соберите нужное состояние за минуты.",
     "cta.text":
       "Скачайте Android-приложение и начните ритуал, который учитывает ваше настроение, время и окружающую среду.",
     "cta.button": "Открыть в Google Play",
     "footer.tagline": "Лендинг BloomVibe для GitHub Pages.",
+    "footer.privacy": "Политика конфиденциальности",
+    "footer.cookies": "Политика cookies",
+    "footer.settings": "Настройки приватности",
+    "policyNav.aria": "Навигация по политикам",
+    "policyNav.home": "Главная",
+    "policyNav.privacy": "Конфиденциальность",
+    "policyNav.cookies": "Cookies",
+    "consent.eyebrow": "Настройки приватности",
+    "consent.title": "Разрешить необязательную аналитику?",
+    "consent.text":
+      "Мы используем Google Analytics только с вашего согласия. Обязательное хранилище запоминает язык и выбранные настройки приватности.",
+    "consent.privacyLink": "Политика конфиденциальности",
+    "consent.cookiesLink": "Политика cookies",
+    "consent.reject": "Отклонить",
+    "consent.settings": "Настройки",
+    "consent.accept": "Разрешить аналитику",
+    "consent.essentialTitle": "Обязательное хранилище",
+    "consent.essentialText":
+      "Нужно для запоминания языка, настроек приватности и базовой работы сайта.",
+    "consent.analyticsTitle": "Аналитическое хранилище",
+    "consent.analyticsText":
+      "Помогает понимать посещения и улучшать сайт через Google Analytics.",
+    "consent.save": "Сохранить выбор",
     "images.hero": "Экран ежедневного ритуала BloomVibe с текущим состоянием и карточками сессий",
     "images.previewOne": "Главный экран BloomVibe с настроением дня, карточкой ритуала и навигацией",
     "images.previewTwo": "Экран BloomVibe с подбором персональных микро-приключений",
@@ -184,17 +230,17 @@ const translations = {
     "brand.homeAria": "Головна BloomVibe",
     "brand.logoAlt": "Логотип BloomVibe",
     "nav.aria": "Основна навігація",
-    "nav.preview": "Прев'ю",
+    "nav.preview": "Екрани",
     "nav.benefits": "Переваги",
     "nav.how": "Як це працює",
     "nav.forYou": "Для кого",
     "nav.download": "Завантажити",
     "lang.aria": "Перемикач мови",
-    "header.cta": "Відкрити застосунок",
-    "hero.eyebrow": "Персональні ритуали під ваш стан",
-    "hero.title": "Змінюйте настрій, фокус і енергію за допомогою персональних ритуалів.",
+    "header.cta": "Завантажити",
+    "hero.eyebrow": "Ритуали під ваш стан",
+    "hero.title": "Змінюйте настрій, фокус і енергію через особисті ритуали.",
     "hero.text":
-      "BloomVibe створює короткі сесії під те, як ви хочете почуватися саме зараз: спокійніше, ясніше, енергійніше або креативніше.",
+      "BloomVibe збирає короткі сесії під те, як ви хочете почуватися зараз: спокійніше, ясніше чи енергійніше.",
     "hero.primaryCta": "Завантажити в Google Play",
     "hero.secondaryCta": "Дивитися екрани застосунку",
     "hero.pointsAria": "Переваги застосунку",
@@ -202,7 +248,7 @@ const translations = {
     "hero.point2": "Ідеї ритуалів удома та надворі",
     "hero.point3": "Підтримка спокою, фокусу, енергії та креативності",
     "preview.eyebrow": "Прев'ю застосунку",
-    "preview.title": "Реальні екрани Android-застосунку.",
+    "preview.title": "Реальні екрани застосунку.",
     "preview.card1.kicker": "Щоденний ритуал",
     "preview.card1.title": "Дивіться поточний стан і активні сесії",
     "preview.card1.text":
@@ -238,7 +284,7 @@ const translations = {
     "how.step3.text":
       "Слідуйте персональній комбінації плейлистів, мікрозавдань і підказок, яку ви отримаєте за секунди.",
     "forYou.eyebrow": "Для кого",
-    "forYou.title": "Для тих, кому потрібне перезавантаження без довгих рутин.",
+    "forYou.title": "Для тих, кому потрібен швидкий ресет без довгих рутин.",
     "forYou.card1.title": "Студенти",
     "forYou.card1.text":
       "Знаходьте навчальний фокус, творчі паузи або швидкий ментальний ресет перед наступним завданням.",
@@ -252,11 +298,34 @@ const translations = {
     "forYou.card4.text":
       "Проходьте через творчий застій за допомогою підказок, руху та ритуалів, що повертають потік.",
     "cta.eyebrow": "Готові спробувати?",
-    "cta.title": "Відкрийте BloomVibe і зберіть кращий стан за кілька хвилин.",
+    "cta.title": "Відкрийте BloomVibe і зберіть потрібний стан за хвилини.",
     "cta.text":
       "Завантажте Android-застосунок і почніть ритуал, який враховує ваш настрій, час і середовище.",
     "cta.button": "Відкрити в Google Play",
     "footer.tagline": "Лендінг BloomVibe для GitHub Pages.",
+    "footer.privacy": "Політика конфіденційності",
+    "footer.cookies": "Політика cookies",
+    "footer.settings": "Налаштування приватності",
+    "policyNav.aria": "Навігація політик",
+    "policyNav.home": "Головна",
+    "policyNav.privacy": "Конфіденційність",
+    "policyNav.cookies": "Cookies",
+    "consent.eyebrow": "Налаштування приватності",
+    "consent.title": "Дозволити необов'язкову аналітику?",
+    "consent.text":
+      "Ми використовуємо Google Analytics лише за вашою згодою. Обов'язкове сховище запам'ятовує мову та вибрані налаштування приватності.",
+    "consent.privacyLink": "Політика конфіденційності",
+    "consent.cookiesLink": "Політика cookies",
+    "consent.reject": "Відхилити",
+    "consent.settings": "Налаштування",
+    "consent.accept": "Дозволити аналітику",
+    "consent.essentialTitle": "Обов'язкове сховище",
+    "consent.essentialText":
+      "Потрібне для запам'ятовування мови, налаштувань приватності та базової роботи сайту.",
+    "consent.analyticsTitle": "Аналітичне сховище",
+    "consent.analyticsText":
+      "Допомагає розуміти відвідування та покращувати сайт через Google Analytics.",
+    "consent.save": "Зберегти вибір",
     "images.hero": "Екран щоденного ритуалу BloomVibe з поточним станом і картками сесій",
     "images.previewOne": "Головний екран BloomVibe з настроєм дня, карткою ритуалу та навігацією",
     "images.previewTwo": "Екран BloomVibe з підбором персональних мікропригод",
@@ -265,6 +334,7 @@ const translations = {
 };
 
 const storageKey = "bloomvibe-language";
+const consentStorageKey = "bloomvibe-consent-v1";
 const yearNode = document.querySelector("#year");
 const textNodes = document.querySelectorAll("[data-i18n]");
 const altNodes = document.querySelectorAll("[data-i18n-alt]");
@@ -274,12 +344,21 @@ const metaTitleNode = document.querySelector("#meta-title");
 const metaDescriptionNode = document.querySelector("#meta-description");
 const metaOgTitleNode = document.querySelector("#meta-og-title");
 const metaOgDescriptionNode = document.querySelector("#meta-og-description");
+const consentBanner = document.querySelector("[data-consent-banner]");
+const consentPanel = document.querySelector("[data-consent-panel]");
+const consentAnalyticsInput = document.querySelector("[data-consent-analytics]");
+const consentOpenButtons = document.querySelectorAll("[data-consent-open]");
+const consentSettingsButtons = document.querySelectorAll("[data-consent-settings]");
+const consentAcceptButtons = document.querySelectorAll("[data-consent-accept]");
+const consentRejectButtons = document.querySelectorAll("[data-consent-reject]");
+const consentSaveButtons = document.querySelectorAll("[data-consent-save]");
+const marketCtaLinks = document.querySelectorAll("[data-market-cta]");
 
 if (yearNode) {
   yearNode.textContent = new Date().getFullYear();
 }
 
-const translate = (language, key) => translations[language]?.[key] ?? translations.en[key] ?? key;
+const translate = (language, key) => translations[language]?.[key] ?? translations.en[key];
 
 const getInitialLanguage = () => {
   try {
@@ -303,33 +382,63 @@ const getInitialLanguage = () => {
   return "en";
 };
 
-const setLanguage = (language) => {
+const setLanguage = (language, options = {}) => {
+  const { persist = true } = options;
+
   textNodes.forEach((node) => {
-    node.textContent = translate(language, node.dataset.i18n);
+    const translatedText = translate(language, node.dataset.i18n);
+
+    if (translatedText) {
+      node.textContent = translatedText;
+    }
   });
 
   altNodes.forEach((node) => {
-    node.alt = translate(language, node.dataset.i18nAlt);
+    const translatedAlt = translate(language, node.dataset.i18nAlt);
+
+    if (translatedAlt) {
+      node.alt = translatedAlt;
+    }
   });
 
   ariaNodes.forEach((node) => {
-    node.setAttribute("aria-label", translate(language, node.dataset.i18nAriaLabel));
+    const translatedAria = translate(language, node.dataset.i18nAriaLabel);
+
+    if (translatedAria) {
+      node.setAttribute("aria-label", translatedAria);
+    }
   });
 
   if (metaTitleNode) {
-    metaTitleNode.textContent = translate(language, "meta.title");
+    const translatedTitle = translate(language, "meta.title");
+
+    if (translatedTitle) {
+      metaTitleNode.textContent = translatedTitle;
+    }
   }
 
   if (metaDescriptionNode) {
-    metaDescriptionNode.setAttribute("content", translate(language, "meta.description"));
+    const translatedDescription = translate(language, "meta.description");
+
+    if (translatedDescription) {
+      metaDescriptionNode.setAttribute("content", translatedDescription);
+    }
   }
 
   if (metaOgTitleNode) {
-    metaOgTitleNode.setAttribute("content", translate(language, "meta.ogTitle"));
+    const translatedOgTitle = translate(language, "meta.ogTitle");
+
+    if (translatedOgTitle) {
+      metaOgTitleNode.setAttribute("content", translatedOgTitle);
+    }
   }
 
   if (metaOgDescriptionNode) {
-    metaOgDescriptionNode.setAttribute("content", translate(language, "meta.ogDescription"));
+    const translatedOgDescription = translate(language, "meta.ogDescription");
+
+    if (translatedOgDescription) {
+      metaOgDescriptionNode.setAttribute("content", translatedOgDescription);
+    }
   }
 
   document.documentElement.lang = language;
@@ -340,18 +449,170 @@ const setLanguage = (language) => {
     button.setAttribute("aria-pressed", String(isActive));
   });
 
-  try {
-    window.localStorage.setItem(storageKey, language);
-  } catch {}
+  if (persist) {
+    try {
+      window.localStorage.setItem(storageKey, language);
+    } catch {}
+  }
 };
 
 langButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    setLanguage(button.dataset.lang);
+    setLanguage(button.dataset.lang, { persist: true });
   });
 });
 
-setLanguage(getInitialLanguage());
+setLanguage(getInitialLanguage(), { persist: false });
+
+const getStoredConsent = () => {
+  try {
+    const savedConsent = JSON.parse(window.localStorage.getItem(consentStorageKey) || "null");
+
+    if (
+      savedConsent &&
+      (savedConsent.analytics === "granted" || savedConsent.analytics === "denied")
+    ) {
+      return savedConsent;
+    }
+  } catch {}
+
+  return null;
+};
+
+const consentPayload = (analyticsGranted) => ({
+  ad_storage: "denied",
+  ad_user_data: "denied",
+  ad_personalization: "denied",
+  analytics_storage: analyticsGranted ? "granted" : "denied",
+});
+
+const syncConsentUI = (consentState) => {
+  if (!consentAnalyticsInput) {
+    return;
+  }
+
+  consentAnalyticsInput.checked = consentState.analytics === "granted";
+};
+
+const showConsentBanner = (expanded = false) => {
+  if (!consentBanner) {
+    return;
+  }
+
+  consentBanner.hidden = false;
+
+  if (consentPanel) {
+    consentPanel.hidden = !expanded;
+  }
+};
+
+const hideConsentBanner = () => {
+  if (!consentBanner) {
+    return;
+  }
+
+  consentBanner.hidden = true;
+
+  if (consentPanel) {
+    consentPanel.hidden = true;
+  }
+};
+
+const updateAnalyticsConsent = (analyticsGranted) => {
+  if (typeof window.gtag !== "function") {
+    return;
+  }
+
+  window.gtag("consent", "update", consentPayload(analyticsGranted));
+};
+
+const trackGrantedPageView = () => {
+  if (typeof window.gtag !== "function") {
+    return;
+  }
+
+  window.gtag("event", "page_view", {
+    page_title: document.title,
+    page_location: window.location.href,
+    page_path: window.location.pathname + window.location.search,
+  });
+};
+
+const saveConsent = (analyticsGranted) => {
+  const previousConsent = getStoredConsent();
+  const nextConsent = {
+    analytics: analyticsGranted ? "granted" : "denied",
+    updatedAt: new Date().toISOString(),
+  };
+
+  try {
+    window.localStorage.setItem(consentStorageKey, JSON.stringify(nextConsent));
+  } catch {}
+
+  syncConsentUI(nextConsent);
+  updateAnalyticsConsent(analyticsGranted);
+  hideConsentBanner();
+
+  if (analyticsGranted && previousConsent?.analytics !== "granted") {
+    trackGrantedPageView();
+  }
+};
+
+const storedConsent = getStoredConsent();
+
+if (storedConsent) {
+  syncConsentUI(storedConsent);
+  hideConsentBanner();
+} else {
+  syncConsentUI({ analytics: "denied" });
+  showConsentBanner(false);
+}
+
+consentOpenButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    showConsentBanner(true);
+  });
+});
+
+consentSettingsButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    showConsentBanner(true);
+  });
+});
+
+consentAcceptButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    saveConsent(true);
+  });
+});
+
+consentRejectButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    saveConsent(false);
+  });
+});
+
+consentSaveButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    saveConsent(Boolean(consentAnalyticsInput?.checked));
+  });
+});
+
+marketCtaLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    if (typeof window.gtag !== "function") {
+      return;
+    }
+
+    window.gtag("event", "select_content", {
+      content_type: "store_cta",
+      item_id: link.dataset.marketCta,
+      link_url: link.href,
+      page_location: window.location.href,
+      page_path: window.location.pathname,
+    });
+  });
+});
 
 const reveals = document.querySelectorAll(".reveal");
 
