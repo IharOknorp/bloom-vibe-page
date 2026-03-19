@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://iharoknorp.github.io/bloom-vibe-page/sitemap.xml
