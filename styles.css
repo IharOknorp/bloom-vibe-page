@@ -249,7 +249,6 @@ h3 {
   letter-spacing: -0.04em;
 }
 
-h1,
 h2 {
   font-family: "Fraunces", serif;
   line-height: 0.98;
@@ -257,14 +256,18 @@ h2 {
 
 h1 {
   max-width: 11ch;
+  font-family: "Manrope", sans-serif;
   font-size: clamp(3.3rem, 7vw, 6.4rem);
+  font-weight: 800;
+  line-height: 0.94;
+  letter-spacing: -0.06em;
 }
 
 html[lang="ru"] h1,
 html[lang="uk"] h1 {
   max-width: 9.6ch;
   font-size: clamp(3.3rem, 6.8vw, 6rem);
-  line-height: 0.99;
+  line-height: 0.95;
 }
 
 h2 {
@@ -697,6 +700,7 @@ html[lang="uk"] .button-small {
   bottom: 18px;
   z-index: 40;
   width: min(calc(100% - 24px), 720px);
+  max-height: calc(100vh - 24px);
 }
 
 .consent-shell {
@@ -710,6 +714,8 @@ html[lang="uk"] .button-small {
     0 24px 64px rgba(67, 46, 20, 0.22),
     inset 0 1px 0 rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(18px);
+  max-height: inherit;
+  overflow: auto;
 }
 
 .consent-eyebrow {
@@ -882,25 +888,67 @@ html[lang="uk"] .button-small {
     flex-direction: column;
   }
 
-  .site-nav {
-    display: grid;
-    justify-items: center;
+  .site-header {
+    position: relative;
+    top: 0;
     gap: 14px;
+    padding: 14px;
+    border-radius: 28px;
+  }
+
+  .site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 18px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
   }
 
   .header-actions {
     width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .lang-switcher {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .lang-button {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 8px 8px;
+    font-size: 0.74rem;
+  }
+
+  .button-small {
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 0.95rem;
   }
 
   .footer-links,
   .consent-links,
-  .consent-actions,
   .consent-panel-actions {
     justify-content: center;
   }
 
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .footer-settings-button {
+    width: 100%;
+  }
+
   .section {
-    padding: 56px 0;
+    padding: 48px 0;
   }
 
   .hero {
@@ -922,12 +970,61 @@ html[lang="uk"] .button-small {
 
   h1 {
     max-width: 10ch;
-    font-size: clamp(2.8rem, 12vw, 4.6rem);
+    font-size: clamp(2.4rem, 10.8vw, 3.8rem);
   }
 
   h2 {
     max-width: none;
-    font-size: clamp(2rem, 8vw, 3rem);
+    font-size: clamp(1.7rem, 7vw, 2.5rem);
+  }
+
+  h3 {
+    font-size: 1.18rem;
+  }
+
+  .eyebrow {
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+  }
+
+  .hero-text,
+  .cta-text,
+  .benefit-card p,
+  .step-card p,
+  .persona-card p,
+  .preview-meta p,
+  .policy-updated,
+  .policy-intro,
+  .policy-section p,
+  .policy-list,
+  .consent-text {
+    font-size: 0.96rem;
+    line-height: 1.6;
+  }
+
+  .hero-actions .button,
+  .consent-panel-actions .button {
+    padding: 12px 16px;
+    font-size: 0.98rem;
+  }
+
+  .consent-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.15fr;
+    gap: 8px;
+  }
+
+  .consent-actions .button {
+    width: 100%;
+    min-width: 0;
+    padding: 10px 12px;
+    font-size: 0.88rem;
+    line-height: 1.2;
+  }
+
+  .hero-points li {
+    padding: 8px 12px;
+    font-size: 0.94rem;
   }
 
   .phone-mockup {
@@ -938,17 +1035,89 @@ html[lang="uk"] .button-small {
   }
 
   .policy-card {
-    padding: 24px;
+    padding: 20px;
   }
 
   .consent-banner {
     right: 10px;
     bottom: 10px;
     width: calc(100% - 20px);
+    max-height: calc(100vh - 20px);
+  }
+
+  .consent-shell {
+    gap: 14px;
+    padding: 16px;
+    border-radius: 22px;
+    max-width: 360px;
+    margin-left: auto;
   }
 
   .consent-option {
     align-items: flex-start;
+    flex-direction: column;
+    padding: 14px;
+  }
+
+  .consent-title,
+  .policy-title {
+    font-size: clamp(1.7rem, 8vw, 2.4rem);
+  }
+
+  .consent-copy {
+    display: grid;
+    gap: 10px;
+  }
+
+  .consent-copy .consent-links {
+    gap: 10px 14px;
+  }
+
+  .consent-panel {
+    gap: 12px;
+    padding-top: 2px;
+  }
+
+  .consent-option p {
+    margin: 0;
+  }
+
+  .consent-option {
+    padding: 12px;
+  }
+
+  .consent-option h3 {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+  }
+
+  .consent-option p {
+    font-size: 0.72rem;
+    line-height: 1.35;
+  }
+
+  .consent-toggle-ui {
+    width: 46px;
+    height: 26px;
+  }
+
+  .consent-toggle-ui::after {
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .consent-toggle input:checked + .consent-toggle-ui::after {
+    transform: translateX(20px);
+  }
+
+  .consent-toggle {
+    align-self: flex-end;
+  }
+
+  .consent-panel-actions .button {
+    width: 100%;
   }
 }
 
